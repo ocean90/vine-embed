@@ -18,7 +18,9 @@ With Vine Embed you can easily share your little videos with other users.
 
 = What's your part? =
 Just place a Vine link into your posts. For example `https://vine.co/v/bjHh0zHdgZT`
+
 **By default no shortcodes are necessary, just a link!**
+
 And that was about your part. Easy, isn't it?
 
 = What does the plugin? =
@@ -29,10 +31,10 @@ To embed a simple vide just embed a link like this:
 `https://vine.co/v/bjHh0zHdgZT`
 
 There are two different types of embeds, simple and postcard. You can see the difference [here](https://vine.co/v/bjHh0zHdgZT/embed).
-The default type is `simple`. To use the `postcard` type you had to choose the [embed] shortcode. Something like this:
+The default type is `simple`. To use the `postcard` type you had to choose the [embed] shortcode. Something like this works:
 `[embed type="postcard"]https://vine.co/v/bjHh0zHdgZT[/embed]`
 
-For more examples please vist the [FAQ section](http://wordpress.org/extend/plugins/spotify-embed/faq/).
+Please visit the [FAQ section](http://wordpress.org/extend/plugins/vine-embed/faq/) for more examples.
 
 **Sounds pretty good? Install now!**
 
