@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Vine Embed
- * Version: 0.1
+ * Version: 0.2
  * Description: Just add Vine links into your posts and the plugin will add the embed code for you.
  * Author: Dominik Schilling
  * Author URI: http://wphelper.de/

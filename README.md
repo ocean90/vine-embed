@@ -3,8 +3,8 @@
 **Tags:** WP Embed, Embed, Video, Vine  
 **Donate link:** <https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VR8YU922B7K46>  
 **Requires at least:** 2.9  
-**Tested up to:** 3.6  
-**Stable tag:** 0.1  
+**Tested up to:** 3.8  
+**Stable tag:** 0.2  
 **License:** GPLv2 or later  
 **License URI:** <http://www.gnu.org/licenses/gpl-2.0.html>  
   
@@ -65,6 +65,18 @@ function ds_vine_embed_default_type( $type ) {
 }  
 add_filter( 'vine_embed_default_type', 'ds_vine_embed_default_type' );  
 ```
+
+#### How can I enable autoplay for audio?
+Just embed the link via the shortcode and use the `play-audio` attribute. Example:
+
+`[embed play-audio]https://vine.co/v/bjHh0zHdgZT[/embed]`
+
+#### Is it possible to change the default value for audio autoplay?
+Yes. You can use a filter:
+
+```
+add_filter( 'vine_embed_default_play_audio', '__return_true' );
+```
   
 #### Can I combine all these keywords?  
 Yes. (But don't try to combine the size keywords, or the sky will fall on your head)  
@@ -100,6 +112,9 @@ To upload the plugin through WordPress, instead of FTP:
   
   
 ## Changelog  
+
+#### 0.2.0 
+* Add attribute and filter for autoplay audio. See FAQ for more info.
   
 #### 0.1.0  
 * First release.
