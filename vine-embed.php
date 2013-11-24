@@ -70,6 +70,13 @@ final class DS_Vine_Embed {
 		if ( empty( $matches ) )
 			return;
 
+		static $vine_embed_script;
+
+		if ( null === $vine_embed_script )
+			$vine_embed_script = true;
+		else
+			$vine_embed_script = false;
+
 		// The video ID.
 		$id = $matches[1];
 
@@ -116,7 +123,7 @@ final class DS_Vine_Embed {
 			esc_url( $embed_src ),
 			(int) $width,
 			(int) $height,
-			'<script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>'
+			$vine_embed_script ? '<script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>' : ''
 		);
 	}
 }
