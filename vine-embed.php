@@ -70,10 +70,10 @@ final class DS_Vine_Embed {
 		if ( empty( $matches ) )
 			return;
 
-		// The video ID
+		// The video ID.
 		$id = $matches[1];
 
-		// Set the size of the embed iframe
+		// Set the size of the embed iframe.
 		if ( ! empty( $attr['size'] ) && 'small' == $attr['size'] ) {
 			$width = $height = 320;
 		} elseif ( ! empty( $attr['size'] ) && 'large' == $attr['size'] ) {
@@ -89,12 +89,12 @@ final class DS_Vine_Embed {
 			}
 		}
 
-		// Set the type, can be simple (default) or postcard
+		// Set the type, can be simple (default) or postcard.
 		$type = apply_filters( 'vine_embed_default_type', 'simple' );
 		if ( ! empty( $attr['type'] ) && 'postcard' == $attr['type'] )
 			$type = 'postcard';
 
-		// Generate the base embed source
+		// Generate the base embed source.
 		$embed_src = sprintf(
 			'%sv/%s/embed/%s',
 			self::$api_endpoint,
@@ -102,7 +102,7 @@ final class DS_Vine_Embed {
 			$type
 		);
 
-		// The embed code
+		// The embed code.
 		return sprintf(
 			'<iframe class="vine-embed" src="%s" width="%d" height="%d" frameborder="0" allowTransparency="true"></iframe>%s',
 			esc_url( $embed_src ),
