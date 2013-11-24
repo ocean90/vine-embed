@@ -102,6 +102,14 @@ final class DS_Vine_Embed {
 			$type
 		);
 
+		// Set autoplay audio.
+		$play_audio = apply_filters( 'vine_embed_default_play_audio', false );
+		if ( in_array( 'play-audio', array_values( $attr ) ) )
+			$play_audio = true;
+
+		if ( $play_audio )
+			$embed_src = add_query_arg( 'audio', '1', $embed_src );
+
 		// The embed code.
 		return sprintf(
 			'<iframe class="vine-embed" src="%s" width="%d" height="%d" frameborder="0" allowTransparency="true"></iframe>%s',
