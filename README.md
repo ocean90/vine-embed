@@ -24,7 +24,7 @@ Just place a Vine link into your posts. For example `https://vine.co/v/bjHh0zHdg
 And that was about your part. Easy, isn't it?  
   
 #### What does the plugin?  
-The plugin will fetch your links of your music and will convert it to a sexy Spotify Play Button.  
+The plugin will fetch your links of your music and will convert it to a sexy video player.
   
 #### Some usage examples  
 To embed a simple vide just embed a link like this:  
